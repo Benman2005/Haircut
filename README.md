@@ -5,7 +5,7 @@ I was mostly toying with some CSS features I never tried before.
 
 Yarn start to initiate app should do it. This project is still under construction, even the api call to Giphy is made using a general development key.
 
-##To do: 
+### To do: 
 - add features with camera.
 - add sparkles
 - use three.js for amazing effects.
