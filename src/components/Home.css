@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body{
+  font-family: 'Dancing Script', cursive;
+}
+
+.question{
+    position: static;
+    /* float: center; */
+    margin:0;
+    margin-bottom:-10vh;
+    z-index: 5 !important;
+    height: 10vh;
+    line-height:10vh;
+    font-size: 7vw;
+    -webkit-text-stroke: 1.5px BLACK;
+    -webkit-text-fill-color: #ffd1d1;
+    text-shadow:
+    3px 3px 0 #d8afaf,
+  -1px -1px 0 #d8afaf,  
+   1px -1px 0 #d8afaf,
+   -1px 1px 0 #d8afaf,
+    1px 1px 0 #d8afaf;
+}
+
+.noRight{
+    float: right;
+    background-color: #ffd1d1;
+    width:50vw;
+    height: 91vh;
+    z-index: 3;
+    font-size: 5vw;
+    line-height: 91vh;
+    margin:0;
+    margin-left:-1px;
+}
+
+.noRight :hover{
+    background-color: #ffeded;
+    filter: none;   
+}
+.yesLeft :hover{
+    opacity: 1;
+    background-color: #ffeded;
+    filter:none;
+}
+
+/* .yesno :hover {
+  background-color: #ffeded;
+  opacity: 0.99;
+} */
+
+.yesLeft{
+    float: left;
+    background-color: #ffd1d1;
+    width:50vw;
+    height: 91vh;
+    z-index: 2;
+    border-right: 1px solid black;
+    font-size: 5vw;
+    line-height: 91vh;
+}
+
+.answer {
+    margin:0;
+    filter: blur(2px); 
+}
+
+.modalNo{
+    float: none !important;
+    margin-left: -33vw;
+    display: flex;
+    justify-content: space-around;
+    z-index: 6;
+    margin:0;
+    /* margin-bottom:-10vh; */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modalContainer{
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-color: white;
+  height: 20vmin;
+  width: 20vmin;
+  font-size: 2.1vmin;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40vmin;
+  border-radius: 100px;
+  /*this is an alternative to the star shaped background svg*/
+  /* -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+  /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+  background: url('../pics/untitled\ \(2\).svg');
+  background-size: contain;
+  animation: spin infinite 20s linear 1.5s, newspaper 1.5s ;
+}
+.newDiv{
+  animation: spin2 infinite 20s linear 1.5s, glow .5s infinite alternate;
+  /* position: absolute; */
+}
+
+@keyframes newspaper{
+  to { 
+    -webkit-transform: rotate(1080deg);
+    -moz-transform: rotate(1080deg);
+    -ms-transform: rotate(1080deg);
+    transform: rotate(1080deg);
+   }
+}
+@keyframes spin {
+  from { 
+    -webkit-transform: rotate(0deg); 
+    -moz-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
+    transform: rotate(0deg); 
+  }
+  to { 
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -ms-transform: rotate(360deg); 
+    transform: rotate(360deg); 
+  }
+}
+@keyframes spin2 {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+@keyframes glow {
+  to{text-shadow: 0 0 10px #d8afaf;}
+}
+
+.fabGif{
+    object-fit:contain;
+    max-height: 50vmin ;
+    max-width: 50vmin;
+
+}
+.watermarked {
+  position: relative;
+}
+
+.watermarked:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url('../pics/Poweredby_100px-White_VertLogo.png');
+  background-size: 10vmin 3.3vmin;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.closeButton button{
+  /* background-color: #ffd1d1; */
+  border: 1px solid #d8afaf;
+  border-radius: 10%;
+}
