@@ -22,13 +22,6 @@ class Home extends PureComponent{
     this.setState({showNo: false})
   }
 
-  // componentDidMount(){
-  //   $(document).ready(function() {
-  //     // all custom jQuery will go here
-  //     $("#demo").html("Hello, World!");
-    
-  //   });
-  // }
   render(){
     
     let imageurl= this.state.image
