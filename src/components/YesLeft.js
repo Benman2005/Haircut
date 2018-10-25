@@ -1,5 +1,4 @@
 import React, {PureComponent} from 'react'
-import { connect } from 'react-redux'
 import './Home.css'
 
 class YesLeft extends PureComponent{
@@ -13,4 +12,4 @@ class YesLeft extends PureComponent{
         )
     }
 }
-export default connect ()(YesLeft)
+export default YesLeft

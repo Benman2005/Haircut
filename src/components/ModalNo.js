@@ -1,5 +1,4 @@
 import React, {PureComponent} from 'react'
-import { connect } from 'react-redux'
 import './Home.css'
 
 class ModalNo extends PureComponent{
@@ -45,4 +44,4 @@ class ModalNo extends PureComponent{
   }
 }
 
-export default connect()(ModalNo)
+export default ModalNo
