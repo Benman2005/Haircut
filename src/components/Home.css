@@ -105,7 +105,7 @@ body{
   animation: spin infinite 20s linear 1.5s, newspaper 1.5s ;
 }
 .newDiv{
-  animation: spin2 infinite 20s linear 1.5s, glow .5s infinite alternate;
+  animation: spin2 infinite 20s linear 1.55s, glow .5s infinite alternate;
   /* position: absolute; */
 }
 
@@ -136,7 +136,7 @@ body{
   to { transform: rotate(0deg); }
 }
 @keyframes glow {
-  to{text-shadow: 0 0 10px #d8afaf;}
+  to{text-shadow: 0 0 10px white;}
 }
 
 .fabGif{

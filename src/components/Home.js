@@ -1,11 +1,8 @@
 import React, {PureComponent} from 'react'
-import { connect } from 'react-redux'
 import YesLeft from './YesLeft';
 import NoRight from './NoRight';
 import ModalNo from './ModalNo';
 import './Home.css'
-
-
 
 class Home extends PureComponent{
   constructor(props) {
@@ -39,4 +36,4 @@ class Home extends PureComponent{
   }
 }
 
-export default connect()(Home)
+export default Home

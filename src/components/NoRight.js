@@ -1,5 +1,4 @@
 import React, {PureComponent} from 'react'
-import { connect } from 'react-redux'
 import './Home.css'
 
 class NoRight extends PureComponent{
@@ -18,4 +17,4 @@ class NoRight extends PureComponent{
   }
 }
 
-export default connect ()(NoRight)
+export default NoRight
