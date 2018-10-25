@@ -5,7 +5,7 @@
 
 # testing
 /coverage
-/components/threejs
+/src/components/threejs
 
 # production
 /build
