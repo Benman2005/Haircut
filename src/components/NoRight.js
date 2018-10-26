@@ -2,12 +2,6 @@ import React, {PureComponent} from 'react'
 import './Home.css'
 
 class NoRight extends PureComponent{
-  state = { showNo: false, image: null };
-
-  handleNo = () =>{
-    this.setState({showNo: !this.state.showNo})  
-  }
-
   render(){
     return(     
       <div className="noRight">
@@ -16,5 +10,4 @@ class NoRight extends PureComponent{
     )
   }
 }
-
 export default NoRight
