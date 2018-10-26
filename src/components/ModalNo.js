@@ -15,10 +15,9 @@ class ModalNo extends PureComponent{
     window.addEventListener('keydown', this.listenKeyboard.bind(this), true);
     document.getElementById("modalContain").classList.remove("modalContainer")
     setTimeout(function() {document.getElementById("modalContain").classList.add("modalContainer");}, 50); 
-    fetch(`http://api.giphy.com/v1/gifs/random?api_key=hd09HuLaKps9GPQeO7wUcw9X3w9CYNMd&tag=fabulous&hair&haircut`)
+    fetch(`https://api.giphy.com/v1/gifs/random?api_key=hd09HuLaKps9GPQeO7wUcw9X3w9CYNMd&tag=fabulous&hair&haircut`, { method: 'GET' })
     .then(res => res.json())
-    .then(data => {data.data.image_url ? this.setState({image: data.data.image_url}) : this.setState({image: "https://media2.giphy.com/media/IrQcyTog3X8VW/giphy.webp"});
-    })
+    .then(data => {data.data.image_url ? this.setState({image: data.data.image_url}) : this.setState({image: "https://media2.giphy.com/media/IrQcyTog3X8VW/giphy.webp"})})
     .catch(err => console.error(err));
   }
 
@@ -32,7 +31,7 @@ class ModalNo extends PureComponent{
           <h1 >CUZ YOU LOOK FABULOUS!!</h1>
           <br />
           <div className ="watermarked">
-            <img className="fabGif" src={fabGif} alt="fab"/>
+            <img className="fabGif" src={fabGif} alt="fabulous"/>
           </div>
           <div className="closeButton" >
             <button onClick={this.props.hide}>close</button>
