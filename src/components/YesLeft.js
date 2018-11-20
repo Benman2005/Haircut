@@ -5,7 +5,7 @@ class YesLeft extends PureComponent{
   render(){
     return(
       <div className="yesLeft">
-        <h1 className='answer'>YES!</h1>
+          <h2 className='answer'>YES!</h2>
       </div>
     )
   }
