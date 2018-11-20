@@ -5,7 +5,7 @@ class NoRight extends PureComponent{
   render(){
     return(     
       <div className="noRight">
-        <h1 className="answer">NO!</h1>
+        <h2 className="answer">NO!</h2>
       </div>
     )
   }
